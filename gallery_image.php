@@ -1,24 +1,4 @@
-<?php
-$con = mysql_connect("localhost","root","");
-if(!$con)
-{
-die("connection to database failed".mysql_error());
-}
 
-$dataselect = mysql_select_db("db_1",$con);
-if(!$dataselect)
-{
-die("Database namelist not selected".mysql_error());
-}
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="public/css/style.css">
-        <title>Manage Album Images</title>
-    </head>
-    <body>
         <?php
         include "includes/nav.php";
         ?>
